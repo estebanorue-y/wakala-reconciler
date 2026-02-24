@@ -81,6 +81,19 @@ func (h *Handlers) IngestReport(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	validProcessors := map[string]bool{"afripay": true, "nairagateway": true, "capepay": true}
+	if !validProcessors[processor] {
+		writeError(w, http.StatusBadRequest,
+			"invalid processor: must be one of afripay, nairagateway, capepay")
+		return
+	}
+	validFormats := map[string]bool{"csv_a": true, "json_b": true, "csv_c": true}
+	if !validFormats[format] {
+		writeError(w, http.StatusBadRequest,
+			"invalid format: must be one of csv_a, json_b, csv_c")
+		return
+	}
+
 	file, _, err := r.FormFile("file")
 	if err != nil {
 		writeError(w, http.StatusBadRequest, "file field is required: "+err.Error())

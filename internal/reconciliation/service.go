@@ -1,9 +1,12 @@
 package reconciliation
 
 import (
+	"database/sql"
 	"fmt"
 	"log"
 	"math"
+	"os"
+	"strconv"
 	"time"
 
 	"github.com/wakala/reconciler/internal/domain"
@@ -91,9 +94,13 @@ func (s *Service) MatchSettlements() (int, error) {
 
 	matched := 0
 	for _, rec := range unmatched {
-		txn, err := s.txnRepo.GetByProcessorRef(rec.ProcessorTransactionID)
+		txn, err := s.txnRepo.GetByProcessorRef(string(rec.Processor), rec.ProcessorTransactionID)
 		if err != nil {
-			continue // no match found
+			if err != sql.ErrNoRows {
+				log.Printf("[reconciliation] WARNING: db error matching %s/%s: %v",
+					rec.Processor, rec.ProcessorTransactionID, err)
+			}
+			continue
 		}
 		if txn == nil {
 			continue
@@ -147,16 +154,22 @@ func calculateConfidence(txn *domain.Transaction, rec *domain.SettlementRecord) 
 	}
 }
 
-// DetectMissingSettlements finds captured transactions older than 48 hours
+// settlementWindowHours returns the configured settlement window from the
+// SETTLEMENT_WINDOW_HOURS environment variable, defaulting to 48.
+func settlementWindowHours() time.Duration {
+	if v := os.Getenv("SETTLEMENT_WINDOW_HOURS"); v != "" {
+		if h, err := strconv.Atoi(v); err == nil && h > 0 {
+			return time.Duration(h) * time.Hour
+		}
+	}
+	return 48 * time.Hour
+}
+
+// DetectMissingSettlements finds captured transactions older than the
+// settlement window (default 48h, configurable via SETTLEMENT_WINDOW_HOURS)
 // that have no matching settlement record.
 func (s *Service) DetectMissingSettlements() (int, error) {
-	// Use a generous cutoff: transactions captured more than 48h ago.
-	cutoff := time.Now().Add(-48 * time.Hour)
-
-	// For test data in the past, use a cutoff that is 48h after the earliest
-	// transaction so that we actually detect missing settlements for old data.
-	// In practice, just use a very old cutoff for demo purposes.
-	cutoff = time.Date(2030, 1, 1, 0, 0, 0, 0, time.UTC)
+	cutoff := time.Now().Add(-settlementWindowHours())
 
 	txns, err := s.txnRepo.GetCapturedWithoutSettlement(cutoff)
 	if err != nil {

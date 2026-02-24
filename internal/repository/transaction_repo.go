@@ -87,8 +87,11 @@ func (r *TransactionRepo) GetByID(id string) (*domain.Transaction, error) {
 	return scanTransaction(row)
 }
 
-func (r *TransactionRepo) GetByProcessorRef(ref string) (*domain.Transaction, error) {
-	row := r.db.QueryRow("SELECT * FROM transactions WHERE processor_reference = ?", ref)
+func (r *TransactionRepo) GetByProcessorRef(processor, ref string) (*domain.Transaction, error) {
+	row := r.db.QueryRow(
+		"SELECT * FROM transactions WHERE processor = ? AND processor_reference = ?",
+		processor, ref,
+	)
 	return scanTransaction(row)
 }
 

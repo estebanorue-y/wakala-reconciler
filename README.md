@@ -1,5 +1,7 @@
 # Wakala Cross-Border Settlement Reconciler
 
+> **Repository:** https://github.com/estebanorue-y/wakala-reconciler
+
 A backend service that ingests settlement reports from multiple payment processors, normalizes the data, detects discrepancies, and exposes an API for Wakala's finance team to query settlement status and flag issues across Kenya, Nigeria, and South Africa.
 
 ---

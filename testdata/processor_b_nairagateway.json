@@ -1,0 +1,342 @@
+{
+  "batch_id": "NG-BATCH-001",
+  "settlement_date": "2024-01-15T23:59:59+01:00",
+  "records": [
+    {
+      "ref": "FAKE-NG-001",
+      "merchant_id": "M007",
+      "amount_ngn": 162803.2,
+      "processing_fee_ngn": 1628.03,
+      "payout_ngn": 161175.17,
+      "settled_at": "2024-01-21T23:59:59+01:00"
+    },
+    {
+      "ref": "FAKE-NG-002",
+      "merchant_id": "M001",
+      "amount_ngn": 584979.2,
+      "processing_fee_ngn": 5849.79,
+      "payout_ngn": 579129.41,
+      "settled_at": "2024-01-19T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-003",
+      "merchant_id": "M013",
+      "amount_ngn": 747182,
+      "processing_fee_ngn": 7471.82,
+      "payout_ngn": 739710.18,
+      "settled_at": "2024-01-19T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-004",
+      "merchant_id": "M018",
+      "amount_ngn": 84356.2,
+      "processing_fee_ngn": 843.56,
+      "payout_ngn": 83512.64,
+      "settled_at": "2024-01-21T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-005",
+      "merchant_id": "M014",
+      "amount_ngn": 356258.4,
+      "processing_fee_ngn": 3562.58,
+      "payout_ngn": 352695.82,
+      "settled_at": "2024-01-14T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-006",
+      "merchant_id": "M017",
+      "amount_ngn": 25169.4,
+      "processing_fee_ngn": 251.69,
+      "payout_ngn": 24917.71,
+      "settled_at": "2024-01-20T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-009",
+      "merchant_id": "M019",
+      "amount_ngn": 380416.6,
+      "processing_fee_ngn": 3804.17,
+      "payout_ngn": 376612.43,
+      "settled_at": "2024-01-18T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-010",
+      "merchant_id": "M007",
+      "amount_ngn": 192696.8,
+      "processing_fee_ngn": 1926.97,
+      "payout_ngn": 190769.83,
+      "settled_at": "2024-01-10T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-011",
+      "merchant_id": "M001",
+      "amount_ngn": 272502.6,
+      "processing_fee_ngn": 2725.03,
+      "payout_ngn": 269777.57,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-013",
+      "merchant_id": "M001",
+      "amount_ngn": 543678,
+      "processing_fee_ngn": 5436.78,
+      "payout_ngn": 538241.22,
+      "settled_at": "2024-01-12T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-014",
+      "merchant_id": "M010",
+      "amount_ngn": 644292.4,
+      "processing_fee_ngn": 6442.92,
+      "payout_ngn": 637849.48,
+      "settled_at": "2024-01-20T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-015",
+      "merchant_id": "M001",
+      "amount_ngn": 168112,
+      "processing_fee_ngn": 1681.12,
+      "payout_ngn": 166430.88,
+      "settled_at": "2024-01-10T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-016",
+      "merchant_id": "M005",
+      "amount_ngn": 770423.8,
+      "processing_fee_ngn": 7704.24,
+      "payout_ngn": 762719.56,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-019",
+      "merchant_id": "M005",
+      "amount_ngn": 203393.4,
+      "processing_fee_ngn": 2033.93,
+      "payout_ngn": 201359.47,
+      "settled_at": "2024-01-11T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-020",
+      "merchant_id": "M009",
+      "amount_ngn": 554643.2,
+      "processing_fee_ngn": 5546.43,
+      "payout_ngn": 549096.77,
+      "settled_at": "2024-01-16T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-021",
+      "merchant_id": "M017",
+      "amount_ngn": 349006.2,
+      "processing_fee_ngn": 3490.06,
+      "payout_ngn": 345516.14,
+      "settled_at": "2024-01-19T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-022",
+      "merchant_id": "M019",
+      "amount_ngn": 551277.8,
+      "processing_fee_ngn": 5512.78,
+      "payout_ngn": 545765.02,
+      "settled_at": "2024-01-15T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-023",
+      "merchant_id": "M005",
+      "amount_ngn": 217613.4,
+      "processing_fee_ngn": 2176.13,
+      "payout_ngn": 215437.27,
+      "settled_at": "2024-01-16T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-024",
+      "merchant_id": "M020",
+      "amount_ngn": 348421.6,
+      "processing_fee_ngn": 3484.22,
+      "payout_ngn": 344937.38,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-025",
+      "merchant_id": "M014",
+      "amount_ngn": 55173.6,
+      "processing_fee_ngn": 551.74,
+      "payout_ngn": 54621.86,
+      "settled_at": "2024-01-13T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-026",
+      "merchant_id": "M008",
+      "amount_ngn": 734557.8,
+      "processing_fee_ngn": 7345.58,
+      "payout_ngn": 727212.22,
+      "settled_at": "2024-01-09T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-028",
+      "merchant_id": "M015",
+      "amount_ngn": 363889.8,
+      "processing_fee_ngn": 3638.9,
+      "payout_ngn": 360250.9,
+      "settled_at": "2024-01-19T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-030",
+      "merchant_id": "M017",
+      "amount_ngn": 729470.2,
+      "processing_fee_ngn": 7294.7,
+      "payout_ngn": 722175.5,
+      "settled_at": "2024-01-18T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-031",
+      "merchant_id": "M006",
+      "amount_ngn": 336208.2,
+      "processing_fee_ngn": 3362.08,
+      "payout_ngn": 332846.12,
+      "settled_at": "2024-01-13T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-033",
+      "merchant_id": "M010",
+      "amount_ngn": 628565.23,
+      "processing_fee_ngn": 6285.65,
+      "payout_ngn": 622279.58,
+      "settled_at": "2024-01-13T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-034",
+      "merchant_id": "M012",
+      "amount_ngn": 184322.8,
+      "processing_fee_ngn": 1843.23,
+      "payout_ngn": 182479.57,
+      "settled_at": "2024-01-14T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-035",
+      "merchant_id": "M011",
+      "amount_ngn": 775985.4,
+      "processing_fee_ngn": 7759.85,
+      "payout_ngn": 768225.55,
+      "settled_at": "2024-01-14T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-036",
+      "merchant_id": "M019",
+      "amount_ngn": 746976.6,
+      "processing_fee_ngn": 7469.77,
+      "payout_ngn": 739506.83,
+      "settled_at": "2024-01-12T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-037",
+      "merchant_id": "M014",
+      "amount_ngn": 395584.6,
+      "processing_fee_ngn": 3955.85,
+      "payout_ngn": 391628.75,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-039",
+      "merchant_id": "M005",
+      "amount_ngn": 758084,
+      "processing_fee_ngn": 7580.84,
+      "payout_ngn": 750503.16,
+      "settled_at": "2024-01-12T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-040",
+      "merchant_id": "M016",
+      "amount_ngn": 274240.6,
+      "processing_fee_ngn": 2742.41,
+      "payout_ngn": 271498.19,
+      "settled_at": "2024-01-20T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-042",
+      "merchant_id": "M006",
+      "amount_ngn": 242593.2,
+      "processing_fee_ngn": 2425.93,
+      "payout_ngn": 240167.27,
+      "settled_at": "2024-01-19T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-043",
+      "merchant_id": "M006",
+      "amount_ngn": 144965,
+      "processing_fee_ngn": 1449.65,
+      "payout_ngn": 143515.35,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-044",
+      "merchant_id": "M014",
+      "amount_ngn": 260399.8,
+      "processing_fee_ngn": 2604,
+      "payout_ngn": 257795.8,
+      "settled_at": "2024-01-14T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-045",
+      "merchant_id": "M020",
+      "amount_ngn": 339463,
+      "processing_fee_ngn": 3394.63,
+      "payout_ngn": 336068.37,
+      "settled_at": "2024-01-20T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-046",
+      "merchant_id": "M015",
+      "amount_ngn": 736027.2,
+      "processing_fee_ngn": 7360.27,
+      "payout_ngn": 728666.93,
+      "settled_at": "2024-01-15T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-049",
+      "merchant_id": "M007",
+      "amount_ngn": 62030.8,
+      "processing_fee_ngn": 620.31,
+      "payout_ngn": 61410.49,
+      "settled_at": "2024-01-09T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-050",
+      "merchant_id": "M013",
+      "amount_ngn": 244410.2,
+      "processing_fee_ngn": 2444.1,
+      "payout_ngn": 241966.1,
+      "settled_at": "2024-01-21T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-051",
+      "merchant_id": "M011",
+      "amount_ngn": 16448.34,
+      "processing_fee_ngn": 164.48,
+      "payout_ngn": 16283.86,
+      "settled_at": "2024-01-11T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-052",
+      "merchant_id": "M001",
+      "amount_ngn": 752506.6,
+      "processing_fee_ngn": 7525.07,
+      "payout_ngn": 744981.53,
+      "settled_at": "2024-01-17T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-054",
+      "merchant_id": "M002",
+      "amount_ngn": 615662.8,
+      "processing_fee_ngn": 6156.63,
+      "payout_ngn": 609506.17,
+      "settled_at": "2024-01-10T23:59:59+01:00"
+    },
+    {
+      "ref": "NG-TXN-055",
+      "merchant_id": "M007",
+      "amount_ngn": 665448.6,
+      "processing_fee_ngn": 6654.49,
+      "payout_ngn": 658794.11,
+      "settled_at": "2024-01-21T23:59:59+01:00"
+    }
+  ]
+}
